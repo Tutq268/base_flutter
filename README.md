@@ -12,6 +12,7 @@
 
 ## Getting Started
 - Flutter version: 3.22.1
+- Install [left_hook](https://github.com/evilmartians/lefthook) and run `lefthook install` at project root. (one time only)
 - Language generator
 - Run `flutter pub run intl_utils:generate`
 
