@@ -1,3 +1,4 @@
+// Flutter imports:
 import 'package:flutter/cupertino.dart';
 
 class CustomCupertinoAlert extends StatelessWidget {
@@ -13,7 +14,7 @@ class CustomCupertinoAlert extends StatelessWidget {
   final Function()? onDismiss;
 
   const CustomCupertinoAlert({
-    Key? key,
+    super.key,
     required this.context,
     required this.title,
     this.content,
@@ -24,7 +25,7 @@ class CustomCupertinoAlert extends StatelessWidget {
     this.isRightDefaultAction = false,
     this.rightAction,
     this.onDismiss,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(context) {

@@ -5,8 +5,13 @@
 //   }
 // }
 
+// Dart imports:
 import 'dart:async';
 
+// Package imports:
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/exception_handler/exception_handler.dart';
 import 'package:base_flutter/data/api/exception_handler/exception_message_mapper.dart';
 import 'package:base_flutter/data/api/exceptions/app_exception.dart';
@@ -17,7 +22,6 @@ import 'package:base_flutter/ui/app_cubit.dart';
 import 'package:base_flutter/ui/cubit/base_state.dart';
 import 'package:base_flutter/ui/cubit/common/common_cubit.dart';
 import 'package:base_flutter/ui/navigation/app_navigator.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class BaseCubit<S extends BaseState> extends BaseCubitDelegate<S>
     with LogMixin {
@@ -71,8 +75,6 @@ abstract class BaseCubitDelegate<S extends BaseState> extends Cubit<S> {
 
       await doOnSuccessOrError?.call();
     } on AppException catch (e) {
-      print("exception");
-
       await doOnSuccessOrError?.call();
       await doOnError?.call(e);
 

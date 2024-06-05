@@ -1,4 +1,11 @@
+// Flutter imports:
+import 'package:flutter/material.dart' as m;
+
+// Package imports:
 import 'package:auto_route/auto_route.dart';
+import 'package:injectable/injectable.dart';
+
+// Project imports:
 import 'package:base_flutter/data/enum/duration_constants.dart';
 import 'package:base_flutter/foundation/mixin/log_mixin.dart';
 import 'package:base_flutter/foundation/utils/log_config.dart';
@@ -10,8 +17,6 @@ import 'package:base_flutter/ui/navigation/base/base_popup_info_mapper.dart';
 import 'package:base_flutter/ui/navigation/base/base_route_info_mapper.dart';
 import 'package:base_flutter/ui/router/router.dart';
 import 'package:base_flutter/ui/router/router.gr.dart';
-import 'package:flutter/material.dart' as m;
-import 'package:injectable/injectable.dart';
 
 @LazySingleton(as: AppNavigator)
 class AppNavigatorImpl extends AppNavigator with LogMixin {
@@ -244,12 +249,10 @@ class AppNavigatorImpl extends AppNavigator with LogMixin {
       context: useRootNavigator
           ? _rootRouterContext
           : _currentTabContextOrRootContext,
-      builder: (_) => m.WillPopScope(
-        onWillPop: () async {
+      builder: (_) => m.PopScope(
+        onPopInvoked: (didPop) {
           logD('Dialog $appPopupInfo dismissed');
           _popups.remove(appPopupInfo);
-
-          return Future.value(true);
         },
         child: _appPopupInfoMapper.map(appPopupInfo, this),
       ),
@@ -290,12 +293,10 @@ class AppNavigatorImpl extends AppNavigator with LogMixin {
         m.Animation<double> animation1,
         m.Animation<double> animation2,
       ) =>
-          m.WillPopScope(
-        onWillPop: () async {
+          m.PopScope(
+        onPopInvoked: (didPop) {
           logD('Dialog $appPopupInfo dismissed');
           _popups.remove(appPopupInfo);
-
-          return Future.value(true);
         },
         child: _appPopupInfoMapper.map(appPopupInfo, this),
       ),

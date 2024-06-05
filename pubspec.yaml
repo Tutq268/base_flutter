@@ -77,6 +77,8 @@ dependencies:
   package_info_plus: ^4.0.2
   dropdown_button2: ^2.3.9
   tuple: ^2.0.2
+  dartx: ^1.2.0
+  import_sorter: ^4.6.0
 
 dev_dependencies:
   flutter_test:

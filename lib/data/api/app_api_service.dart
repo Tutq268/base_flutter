@@ -1,21 +1,23 @@
+// Package imports:
+import 'package:injectable/injectable.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/client/auth_app_server_api_client.dart';
 import 'package:base_flutter/data/api/client/base/rest_api_client.dart';
 import 'package:base_flutter/data/api/client/none_auth_app_server_api_client.dart';
-import 'package:base_flutter/data/api/client/random_user_api_client.dart';
 import 'package:base_flutter/data/api/model/api_auth_response_data.dart';
 import 'package:base_flutter/data/model/auth/verify_otp_response.dart';
-import 'package:injectable/injectable.dart';
 
 @LazySingleton()
 class AppApiService {
   AppApiService(
     this._noneAuthAppServerApiClient,
     this._authAppServerApiClient,
-    this._randomUserApiClient,
+    // this._randomUserApiClient,
   );
   final NoneAuthAppServerApiClient _noneAuthAppServerApiClient;
   final AuthAppServerApiClient _authAppServerApiClient;
-  final RandomUserApiClient _randomUserApiClient;
+  // final RandomUserApiClient _randomUserApiClient;
 
   Future<ApiAuthResponseData?> login({
     required String type,

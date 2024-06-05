@@ -1,5 +1,8 @@
-import 'package:base_flutter/ui/resource/styles/app_colors.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Project imports:
+import 'package:base_flutter/ui/resource/styles/app_colors.dart';
 
 /// define custom themes here
 final lightTheme = ThemeData(
@@ -35,5 +38,5 @@ extension ThemeDataExtensions on ThemeData {
 
 class AppThemeSetting {
   const AppThemeSetting._();
-  static late AppThemeType currentAppThemeType = AppThemeType.light;
+  static AppThemeType currentAppThemeType = AppThemeType.light;
 }

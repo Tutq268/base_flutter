@@ -1,11 +1,17 @@
+// Flutter imports:
+import 'package:flutter/foundation.dart';
+
+// Package imports:
+import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/app_api_service.dart';
 import 'package:base_flutter/data/api/exceptions/app_exception.dart';
 import 'package:base_flutter/data/preference/app_preferences.dart';
 import 'package:base_flutter/ui/cubit/base_cubit.dart';
 import 'package:base_flutter/ui/navigation/app_route_info.dart';
 import 'package:base_flutter/ui/screen/verify_otp/cubit/verify_otp_state.dart';
-import 'package:dio/dio.dart';
-import 'package:injectable/injectable.dart';
 
 @Injectable()
 class VerifyOtpCubit extends BaseCubit<VerifyOtpState> {
@@ -30,7 +36,7 @@ class VerifyOtpCubit extends BaseCubit<VerifyOtpState> {
           handleLoading: false,
           doOnSubscribe: () async {},
           doOnError: (AppException e) async {
-            print("do onError: $e");
+            debugPrint("do onError: $e");
           },
           doOnSuccessOrError: () async {
             emit(state.copyWith(isLoading: false));

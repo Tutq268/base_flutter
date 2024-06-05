@@ -1,22 +1,26 @@
-import 'package:base_flutter/foundation/constant/ui/locale_constant.dart';
-import 'package:base_flutter/resource/generated/l10n.dart';
-import 'package:base_flutter/ui/resource/styles/app_colors.dart';
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:bot_toast/bot_toast.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_it/get_it.dart';
+
+// Project imports:
 import 'package:base_flutter/foundation/constant/ui/device_constants.dart';
+import 'package:base_flutter/foundation/constant/ui/locale_constant.dart';
 import 'package:base_flutter/foundation/constant/ui/ui_constants.dart';
+import 'package:base_flutter/resource/generated/l10n.dart';
 import 'package:base_flutter/ui/app_cubit.dart';
 import 'package:base_flutter/ui/app_state.dart';
 import 'package:base_flutter/ui/di/di.dart' as di;
+import 'package:base_flutter/ui/resource/styles/app_colors.dart';
 import 'package:base_flutter/ui/resource/styles/app_themes.dart';
 import 'package:base_flutter/ui/router/app_navigator_observer.dart';
-
 import 'package:base_flutter/ui/router/router.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get_it/get_it.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 final _appRouter = GetIt.instance.get<AppRouter>();
 final _botToastBuilder = BotToastInit();
@@ -40,7 +44,6 @@ class MyApp extends StatelessWidget {
       ..dismissOnTap = false;
   }
 
-  @override
   bool get isAppWidget => true;
 
   @override
@@ -61,7 +64,6 @@ class MyApp extends StatelessWidget {
                     previous.isDarkMode != current.isDarkMode ||
                     previous.languageCode != current.languageCode,
                 builder: (context, state) {
-                  print(state.isDarkMode);
                   if (state.isLoading == true) {
                     return Container();
                   }

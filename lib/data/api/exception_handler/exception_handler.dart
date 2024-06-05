@@ -1,8 +1,8 @@
+// Project imports:
 import 'package:base_flutter/data/enum/duration_constants.dart';
 import 'package:base_flutter/foundation/helper/function/function.dart';
 import 'package:base_flutter/ui/navigation/app_navigator.dart';
 import 'package:base_flutter/ui/navigation/app_popup_info.dart';
-
 import '../exceptions/app_exception.dart';
 import '../exceptions/app_exception_wrapper.dart';
 import '../exceptions/remote_exception.dart';
@@ -62,7 +62,7 @@ class ExceptionHandler {
       case AppExceptionType.remoteConfig:
         return _showErrorSnackBar(message: message);
       case AppExceptionType.uncaught:
-        return null;
+        return;
       case AppExceptionType.validation:
         await _showErrorDialog(message: message);
         break;
