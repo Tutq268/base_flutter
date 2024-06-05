@@ -1,6 +1,10 @@
 //ignore_for_file: public_member_api_docs
-import 'package:auto_route/auto_route.dart';
+
+// Flutter imports:
 import 'package:flutter/cupertino.dart';
+
+// Package imports:
+import 'package:auto_route/auto_route.dart';
 
 // mock auth state
 var isAuthenticated = false;

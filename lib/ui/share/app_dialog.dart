@@ -1,8 +1,13 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+// Project imports:
 import 'package:base_flutter/resource/dimens/app_dimen.dart';
 import 'package:base_flutter/resource/dimens/dimens.dart';
 import 'package:base_flutter/ui/share/button/base_button.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter/material.dart';
 
 class AppDialog extends StatelessWidget {
   final String? title;

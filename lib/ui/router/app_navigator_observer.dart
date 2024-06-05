@@ -1,6 +1,9 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:base_flutter/foundation/mixin/log_mixin.dart';
 import 'package:base_flutter/foundation/utils/log_config.dart';
-import 'package:flutter/material.dart';
 
 class AppNavigatorObserver extends NavigatorObserver with LogMixin {
   AppNavigatorObserver();

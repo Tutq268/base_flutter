@@ -1,3 +1,4 @@
+// Package imports:
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'mock_data.freezed.dart';

@@ -1,8 +1,13 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:auto_route/auto_route.dart';
+
+// Project imports:
 import 'package:base_flutter/ui/screen/support/cubit/support_cubit.dart';
 import 'package:base_flutter/ui/share/scaffold/base_page_state.dart';
 import 'package:base_flutter/ui/share/scaffold/base_screen.dart';
-import 'package:flutter/material.dart';
 
 @RoutePage()
 class SupportPage extends StatefulWidget {

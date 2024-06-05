@@ -1,7 +1,12 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+// Project imports:
 import 'package:base_flutter/resource/dimens/dimens.dart';
 import 'package:base_flutter/ui/resource/styles/app_text_styles.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTab extends StatefulWidget {
   const CustomTab(

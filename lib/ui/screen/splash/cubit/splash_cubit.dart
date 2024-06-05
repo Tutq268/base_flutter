@@ -1,9 +1,12 @@
+// Package imports:
+import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
+
+// Project imports:
 import 'package:base_flutter/data/preference/app_preferences.dart';
 import 'package:base_flutter/ui/cubit/base_cubit.dart';
 import 'package:base_flutter/ui/navigation/app_route_info.dart';
 import 'package:base_flutter/ui/screen/splash/cubit/splash_state.dart';
-import 'package:dio/dio.dart';
-import 'package:injectable/injectable.dart';
 
 @Injectable()
 class SplashCubit extends BaseCubit<SplashState> {

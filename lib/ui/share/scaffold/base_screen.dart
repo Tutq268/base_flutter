@@ -1,7 +1,10 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:base_flutter/ui/di/di.dart' as di;
 import 'package:base_flutter/ui/navigation/app_navigator.dart';
 import 'package:base_flutter/ui/resource/styles/app_colors.dart';
-import 'package:flutter/material.dart';
 
 class BaseScreen extends StatelessWidget {
   BaseScreen(

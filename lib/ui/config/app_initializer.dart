@@ -1,3 +1,4 @@
+// Project imports:
 import 'package:base_flutter/ui/config/config.dart';
 
 abstract class ApplicationConfig extends Config {}

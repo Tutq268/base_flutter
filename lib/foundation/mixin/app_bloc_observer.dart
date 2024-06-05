@@ -1,6 +1,9 @@
+// Package imports:
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+// Project imports:
 import 'package:base_flutter/foundation/utils/log_config.dart';
 import 'package:base_flutter/foundation/utils/log_utils.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AppBlocObserver extends BlocObserver {
   AppBlocObserver({

@@ -1,11 +1,16 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+// Project imports:
 import 'package:base_flutter/ui/di/di.dart';
 import 'package:base_flutter/ui/resource/styles/app_text_styles.dart';
 import 'package:base_flutter/ui/router/router.gr.dart';
 import 'package:base_flutter/ui/screen/my_package/cubit/my_package_cubit.dart';
 import 'package:base_flutter/ui/share/button/base_button.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class NotLoginScreen extends StatelessWidget {
   const NotLoginScreen(

@@ -1,6 +1,11 @@
-import 'package:base_flutter/foundation/constant/ui/device_constants.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+// Project imports:
+import 'package:base_flutter/foundation/constant/ui/device_constants.dart';
 
 class AppDimen {
   AppDimen._({

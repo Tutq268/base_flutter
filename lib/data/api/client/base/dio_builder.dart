@@ -1,9 +1,12 @@
+// Package imports:
 import 'package:dartx/dartx.dart';
+import 'package:dio/dio.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/client/base/api_client_default_settings.dart';
 import 'package:base_flutter/data/api/middleware/base_interceptor.dart';
 import 'package:base_flutter/data/constant/server/server_timeout_constants.dart';
 import 'package:base_flutter/data/constant/server/url_constants.dart';
-import 'package:dio/dio.dart';
 
 class DioBuilder {
   const DioBuilder._();

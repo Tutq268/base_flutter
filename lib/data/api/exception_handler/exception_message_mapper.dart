@@ -1,5 +1,5 @@
+// Project imports:
 import 'package:base_flutter/foundation/validator/validation_exception.dart';
-
 import '../exceptions/app_exception.dart';
 import '../exceptions/remote_exception.dart';
 

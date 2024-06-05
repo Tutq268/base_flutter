@@ -1,8 +1,13 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:bot_toast/bot_toast.dart';
+import 'package:injectable/injectable.dart';
+
+// Project imports:
 import 'package:base_flutter/ui/resource/styles/app_colors.dart';
 import 'package:base_flutter/ui/resource/styles/app_text_styles.dart';
-import 'package:flutter/material.dart';
-import 'package:injectable/injectable.dart';
 
 abstract class IToast {
   void show({

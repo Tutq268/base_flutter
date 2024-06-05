@@ -1,6 +1,8 @@
-import 'package:base_flutter/data/enum/duration_constants.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
 
+// Project imports:
+import 'package:base_flutter/data/enum/duration_constants.dart';
 import 'app_popup_info.dart';
 import 'app_route_info.dart';
 

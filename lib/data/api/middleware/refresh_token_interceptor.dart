@@ -1,14 +1,18 @@
+// Dart imports:
 import 'dart:collection';
 import 'dart:io';
 
+// Package imports:
+import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
+import 'package:tuple/tuple.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/client/none_auth_app_server_api_client.dart';
 import 'package:base_flutter/data/api/middleware/base_interceptor.dart';
 import 'package:base_flutter/data/api/refresh_token_api_service.dart';
 import 'package:base_flutter/data/constant/server/server_request_response_constants.dart';
 import 'package:base_flutter/data/preference/app_preferences.dart';
-import 'package:dio/dio.dart';
-import 'package:injectable/injectable.dart';
-import 'package:tuple/tuple.dart';
 
 @Injectable()
 class RefreshTokenInterceptor extends BaseInterceptor {

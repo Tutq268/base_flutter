@@ -1,6 +1,10 @@
 // ignore_for_file: avoid_hard_coded_colors
-import 'package:base_flutter/ui/resource/styles/app_themes.dart';
+
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Project imports:
+import 'package:base_flutter/ui/resource/styles/app_themes.dart';
 
 class AppColors {
   const AppColors(

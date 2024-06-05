@@ -1,8 +1,17 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+
+// Project imports:
+import 'package:base_flutter/resource/dimens/dimens.dart';
 import 'package:base_flutter/resource/generated/l10n.dart';
 import 'package:base_flutter/ui/app_cubit.dart';
 import 'package:base_flutter/ui/app_state.dart';
-import 'package:base_flutter/resource/dimens/dimens.dart';
 import 'package:base_flutter/ui/enum/language_code/language_code_enum.dart';
 import 'package:base_flutter/ui/navigation/app_route_info.dart';
 import 'package:base_flutter/ui/screen/home/cubit/home_cubit.dart';
@@ -11,10 +20,6 @@ import 'package:base_flutter/ui/share/button/base_button.dart';
 import 'package:base_flutter/ui/share/dropdown/dropdown_primary.dart';
 import 'package:base_flutter/ui/share/scaffold/base_page_state.dart';
 import 'package:base_flutter/ui/share/scaffold/base_screen.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 @RoutePage()
 class HomePage extends StatefulWidget {

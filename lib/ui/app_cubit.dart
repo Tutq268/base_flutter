@@ -1,11 +1,14 @@
+// Package imports:
+import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
+
+// Project imports:
 import 'package:base_flutter/data/preference/app_preferences.dart';
 import 'package:base_flutter/data/preference/language_code_data_mapper.dart';
 import 'package:base_flutter/ui/app_state.dart';
 import 'package:base_flutter/ui/cubit/base_cubit.dart';
 import 'package:base_flutter/ui/enum/language_code/language_code_enum.dart';
 import 'package:base_flutter/ui/resource/styles/app_themes.dart';
-import 'package:dio/dio.dart';
-import 'package:injectable/injectable.dart';
 
 @LazySingleton()
 class AppCubit extends BaseCubit<AppState> {

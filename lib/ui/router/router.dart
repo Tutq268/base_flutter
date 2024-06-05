@@ -1,6 +1,9 @@
+// Package imports:
 import 'package:auto_route/auto_route.dart';
-import 'package:base_flutter/ui/router/router.gr.dart';
 import 'package:injectable/injectable.dart';
+
+// Project imports:
+import 'package:base_flutter/ui/router/router.gr.dart';
 
 // ignore_for_file:prefer-single-widget-per-file
 @AutoRouterConfig(

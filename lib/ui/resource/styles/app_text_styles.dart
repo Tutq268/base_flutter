@@ -1,8 +1,12 @@
 // ignore_for_file: avoid_hard_coded_text_style
+
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:base_flutter/resource/dimens/app_dimen.dart';
 import 'package:base_flutter/resource/dimens/dimens.dart';
 import 'package:base_flutter/ui/resource/styles/app_colors.dart';
-import 'package:flutter/material.dart';
 
 /// AppTextStyle format as follows:
 /// s[fontSize][fontWeight][Color]
