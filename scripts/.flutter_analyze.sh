@@ -5,16 +5,16 @@ echo "${GREEN}========================Flutter Analyze Start=====================
 RESULT=""
 
 if hash fvm 2>/dev/null; then
-  echo "Using fvm flutter version"
+  echo "Using FVM flutter version"
   RESULT=$(fvm dart analyze --fatal-infos --no-fatal-warnings)
 else
-  echo "Using local flutter version"
+  echo "Using LOCAL flutter version"
   RESULT=$(dart analyze --fatal-infos --no-fatal-warnings)
 fi
 
 if [[ $RESULT == *"info "* ]] || [[ $RESULT == *"warning "* ]]; then
-    echo "${RED}----> Some files have linter fatal errors, check Dart Analysis"
-    echo ${RESULT}
+    echo "${RED}----> Some files have linter fatal errors, please check Dart Analysis"
+    echo "${RESULT}"
     exit 1
 else
     echo "----> All analyzes are good :)"

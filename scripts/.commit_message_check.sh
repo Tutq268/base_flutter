@@ -1,9 +1,9 @@
-GREEN='\033[1;32m'
 RED='\033[0;31m'
+GREEN='\033[1;32m'
 
 echo "${GREEN}========================Check Commit Message======================="
 
-commitMessageFile=".git/COMMIT_EDITMSG"
+commitMessageFile=".git/COMMIT_EDIT_MSG"
 commitMessage=""
 
 if [  -e "$commitMessageFile"  ]; then
@@ -22,13 +22,13 @@ isValidCommitMessage() {
 }
 
 if ! isValidCommitMessage "$commitMessage"; then
-    echo "${RED}👎 Invalid commit message format."
-    echo "${RED}Commit message should follow the Conventional Commits format."
-    echo "${RED}========================Check Commit Message Failed======================="
+    echo "${RED}👎 Invalid commit message format !!!"
+    echo "${RED}Commit message should follow the Conventional Commits format from here: https://www.conventionalcommits.org/en/v1.0.0/"
+    echo "${RED}==========================Check Commit Message Failed========================="
     exit 1
 fi
 
-echo "👍 Valid commit message!"
-echo "${GREEN}========================Check Commit Message Finish======================="
+echo "👍 Valid All commit message!"
+echo "${GREEN}===========================Check Commit Message Finish=========================="
 exit 0
 
