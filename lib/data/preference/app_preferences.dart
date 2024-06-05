@@ -1,11 +1,15 @@
+// Dart imports:
 import 'dart:convert';
 
-import 'package:base_flutter/data/model/account/account_model.dart';
-import 'package:base_flutter/foundation/constant/share_preference_connstant.dart';
-import 'package:base_flutter/foundation/mixin/log_mixin.dart';
+// Package imports:
 import 'package:encrypted_shared_preferences/encrypted_shared_preferences.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+// Project imports:
+import 'package:base_flutter/data/model/account/account_model.dart';
+import 'package:base_flutter/foundation/constant/share_preference_connstant.dart';
+import 'package:base_flutter/foundation/mixin/log_mixin.dart';
 
 @LazySingleton()
 class AppPreferences with LogMixin {

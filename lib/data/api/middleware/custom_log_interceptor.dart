@@ -1,7 +1,9 @@
-import 'package:base_flutter/foundation/utils/log_config.dart';
-import 'package:base_flutter/foundation/utils/log_utils.dart';
+// Package imports:
 import 'package:dio/dio.dart';
 
+// Project imports:
+import 'package:base_flutter/foundation/utils/log_config.dart';
+import 'package:base_flutter/foundation/utils/log_utils.dart';
 import 'base_interceptor.dart';
 
 class CustomLogInterceptor extends BaseInterceptor {

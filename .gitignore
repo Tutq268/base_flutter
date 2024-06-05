@@ -41,3 +41,37 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+
+# Ignore on project
+/lib/generated/
+*.g.dart
+/lib/gen/
+coverage/lcov.info
+/ios/build
+/resources/
+ios/Podfile.lock
+code-quality-report.json
+metrics/
+AuthKey.p8
+fastlane/app_store_connect_token.json
+assets/pem/
+.pem
+fastlane/hype_app_store_connect_token.json
+android/google_credential_ci.json
+fastlane/simulator-upload-credential.json
+fastlane/google_application_credentials_dev.json
+widgets_report/
+
+.firebase
+Gemfile.lock
+fastlane/report.xml
+*.stackdump
+fastlane/.env.
+*.cer
+*.mobileprovision
+node_modules
+*.jks
+
+# FVM Version Cache
+.fvm/

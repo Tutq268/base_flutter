@@ -1,7 +1,12 @@
-import 'package:base_flutter/ui/config/app_path.dart';
-import 'package:base_flutter/resource/dimens/dimens.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:lottie/lottie.dart';
+
+// Project imports:
+import 'package:base_flutter/resource/dimens/dimens.dart';
+import 'package:base_flutter/ui/config/app_path.dart';
 
 class CommonLoading extends StatelessWidget {
   const CommonLoading(

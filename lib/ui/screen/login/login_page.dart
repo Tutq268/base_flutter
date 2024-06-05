@@ -1,4 +1,13 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
+
+// Project imports:
 import 'package:base_flutter/resource/dimens/dimens.dart';
 import 'package:base_flutter/ui/resource/styles/app_colors.dart';
 import 'package:base_flutter/ui/resource/styles/app_text_styles.dart';
@@ -8,10 +17,6 @@ import 'package:base_flutter/ui/share/button/base_button.dart';
 import 'package:base_flutter/ui/share/scaffold/base_page_state.dart';
 import 'package:base_flutter/ui/share/scaffold/base_screen.dart';
 import 'package:base_flutter/ui/share/textfield/app_text_field.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 @RoutePage()
 class LoginPage extends StatefulWidget {

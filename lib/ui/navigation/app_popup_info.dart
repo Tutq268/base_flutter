@@ -1,4 +1,7 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'app_popup_info.freezed.dart';

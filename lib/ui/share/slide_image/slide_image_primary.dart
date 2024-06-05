@@ -1,9 +1,14 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:base_flutter/resource/dimens/dimens.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shimmer/shimmer.dart';
+
+// Project imports:
+import 'package:base_flutter/resource/dimens/dimens.dart';
 
 class SlideImagePrimary extends StatefulWidget {
   const SlideImagePrimary(

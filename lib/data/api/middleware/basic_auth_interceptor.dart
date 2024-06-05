@@ -1,8 +1,12 @@
+// Dart imports:
 import 'dart:convert';
 
+// Package imports:
+import 'package:dio/dio.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/middleware/base_interceptor.dart';
 import 'package:base_flutter/data/constant/server/server_request_response_constants.dart';
-import 'package:dio/dio.dart';
 
 class BasicAuthInterceptor extends BaseInterceptor {
   BasicAuthInterceptor({

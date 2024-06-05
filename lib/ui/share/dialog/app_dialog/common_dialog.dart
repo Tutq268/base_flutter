@@ -1,6 +1,9 @@
+// Flutter imports:
+import 'package:flutter/cupertino.dart';
+
+// Project imports:
 import 'package:base_flutter/ui/resource/styles/app_text_styles.dart';
 import 'package:base_flutter/ui/share/dialog/app_dialog/popup_button.dart';
-import 'package:flutter/cupertino.dart';
 
 class CommonDialog extends StatelessWidget {
   const CommonDialog({

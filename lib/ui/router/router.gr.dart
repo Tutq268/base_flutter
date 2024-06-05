@@ -8,7 +8,14 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
+
+// Flutter imports:
+import 'package:flutter/material.dart' as _i12;
+
+// Package imports:
 import 'package:auto_route/auto_route.dart' as _i11;
+
+// Project imports:
 import 'package:base_flutter/ui/router/router.dart' as _i2;
 import 'package:base_flutter/ui/screen/home/home_page.dart' as _i1;
 import 'package:base_flutter/ui/screen/login/login_page.dart' as _i3;
@@ -19,7 +26,6 @@ import 'package:base_flutter/ui/screen/service/service_page.dart' as _i7;
 import 'package:base_flutter/ui/screen/splash/splash_page.dart' as _i8;
 import 'package:base_flutter/ui/screen/support/support_page.dart' as _i9;
 import 'package:base_flutter/ui/screen/verify_otp/verify_otp_page.dart' as _i10;
-import 'package:flutter/material.dart' as _i12;
 
 abstract class $AppRouter extends _i11.RootStackRouter {
   $AppRouter({super.navigatorKey});

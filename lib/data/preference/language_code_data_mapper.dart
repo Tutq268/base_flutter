@@ -1,7 +1,10 @@
-import 'package:base_flutter/data/api/mapper/base/base_data_mapper.dart';
-import 'package:base_flutter/ui/enum/language_code/language_code_enum.dart';
+// Package imports:
 import 'package:dartx/dartx.dart';
 import 'package:injectable/injectable.dart';
+
+// Project imports:
+import 'package:base_flutter/data/api/mapper/base/base_data_mapper.dart';
+import 'package:base_flutter/ui/enum/language_code/language_code_enum.dart';
 
 @Injectable()
 class LanguageCodeDataMapper extends BaseDataMapper<String, LanguageCode>

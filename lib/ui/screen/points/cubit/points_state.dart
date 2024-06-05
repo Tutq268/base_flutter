@@ -1,5 +1,8 @@
-import 'package:base_flutter/ui/cubit/base_state.dart';
+// Package imports:
 import 'package:freezed_annotation/freezed_annotation.dart';
+
+// Project imports:
+import 'package:base_flutter/ui/cubit/base_state.dart';
 
 part 'points_state.freezed.dart';
 

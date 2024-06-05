@@ -1,6 +1,9 @@
+// Package imports:
+import 'package:dio/dio.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/middleware/base_interceptor.dart';
 import 'package:base_flutter/data/constant/server/retry_on_error_constants.dart';
-import 'package:dio/dio.dart';
 
 class RetryOnErrorInterceptor extends BaseInterceptor {
   RetryOnErrorInterceptor(this.dio);

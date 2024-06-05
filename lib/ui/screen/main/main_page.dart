@@ -1,14 +1,18 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+// Project imports:
 import 'package:base_flutter/resource/dimens/dimens.dart';
-import 'package:base_flutter/ui/config/app_path.dart';
 import 'package:base_flutter/ui/config/key.dart';
 import 'package:base_flutter/ui/enum/bottom_tab_enum.dart';
 import 'package:base_flutter/ui/resource/styles/app_colors.dart';
 import 'package:base_flutter/ui/router/app_navigator_impl.dart';
 import 'package:base_flutter/ui/screen/main/cubit/main_cubit.dart';
 import 'package:base_flutter/ui/share/scaffold/base_page_state.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 @RoutePage()
 class MainPage extends StatefulWidget {
@@ -23,10 +27,8 @@ class _MainPageState extends BasePageState<MainPage, MainCubit> {
 
   @override
   Widget buildPage(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        return false;
-      },
+    return PopScope(
+      canPop: false,
       child: SafeArea(
         top: false,
         bottom: false,

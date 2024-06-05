@@ -1,9 +1,14 @@
-import 'package:base_flutter/foundation/utils/log_utils.dart';
-import 'package:base_flutter/ui/resource/styles/app_text_styles.dart';
-import 'package:dropdown_button2/dropdown_button2.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tuple/tuple.dart';
+
+// Project imports:
+import 'package:base_flutter/foundation/utils/log_utils.dart';
+import 'package:base_flutter/ui/resource/styles/app_text_styles.dart';
 
 class DropdownPrimary<T> extends StatelessWidget {
   const DropdownPrimary({

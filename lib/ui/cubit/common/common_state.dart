@@ -1,6 +1,9 @@
+// Package imports:
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/exceptions/app_exception_wrapper.dart';
 import 'package:base_flutter/ui/cubit/base_state.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'common_state.freezed.dart';
 

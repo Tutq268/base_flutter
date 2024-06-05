@@ -1,8 +1,10 @@
+// Package imports:
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import 'package:base_flutter/data/api/exceptions/remote_exception.dart';
 
+// Project imports:
+import 'package:base_flutter/data/api/exceptions/remote_exception.dart';
 import 'base_interceptor.dart';
 
 @Injectable()

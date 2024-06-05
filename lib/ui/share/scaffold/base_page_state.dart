@@ -1,19 +1,24 @@
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:get_it/get_it.dart';
+import 'package:provider/provider.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/exception_handler/exception_handler.dart';
 import 'package:base_flutter/data/api/exception_handler/exception_message_mapper.dart';
 import 'package:base_flutter/data/api/exceptions/app_exception.dart';
 import 'package:base_flutter/data/api/exceptions/app_exception_wrapper.dart';
 import 'package:base_flutter/foundation/mixin/log_mixin.dart';
+import 'package:base_flutter/resource/dimens/app_dimen.dart';
 import 'package:base_flutter/ui/app_cubit.dart';
 import 'package:base_flutter/ui/cubit/base_cubit.dart';
 import 'package:base_flutter/ui/cubit/common/common_cubit.dart';
 import 'package:base_flutter/ui/cubit/common/common_state.dart';
 import 'package:base_flutter/ui/navigation/app_navigator.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:base_flutter/resource/dimens/app_dimen.dart';
 import 'package:base_flutter/ui/resource/styles/app_colors.dart';
-import 'package:get_it/get_it.dart';
-import 'package:provider/provider.dart';
 
 abstract class BasePageState<T extends StatefulWidget, B extends BaseCubit>
     extends BasePageStageDelegate<T, B> with LogMixin {}

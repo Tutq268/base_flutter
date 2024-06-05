@@ -1,11 +1,17 @@
+// Dart imports:
 import 'dart:io';
 
+// Flutter imports:
+import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:android_id/android_id.dart';
+import 'package:device_info_plus/device_info_plus.dart';
+import 'package:flutter_udid/flutter_udid.dart';
+
+// Project imports:
 import 'package:base_flutter/data/enum/shared_enum.dart';
 import 'package:base_flutter/foundation/constant/ui/device_constants.dart';
-import 'package:device_info_plus/device_info_plus.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_udid/flutter_udid.dart';
 
 class DeviceUtils {
   const DeviceUtils._();

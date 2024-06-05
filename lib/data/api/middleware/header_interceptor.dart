@@ -1,10 +1,13 @@
+// Dart imports:
 import 'dart:io';
 
-import 'package:base_flutter/data/constant/server/server_request_response_constants.dart';
-import 'package:base_flutter/foundation/helper/app_info/app_info.dart';
+// Package imports:
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
 
+// Project imports:
+import 'package:base_flutter/data/constant/server/server_request_response_constants.dart';
+import 'package:base_flutter/foundation/helper/app_info/app_info.dart';
 import 'base_interceptor.dart';
 
 @Injectable()

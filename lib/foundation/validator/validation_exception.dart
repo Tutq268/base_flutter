@@ -1,3 +1,4 @@
+// Project imports:
 import 'package:base_flutter/data/api/exceptions/app_exception.dart';
 
 class ValidationException extends AppException {

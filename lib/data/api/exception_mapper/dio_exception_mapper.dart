@@ -1,9 +1,13 @@
+// Dart imports:
 import 'dart:io';
 
+// Package imports:
+import 'package:dio/dio.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/exceptions/exception_mapper.dart';
 import 'package:base_flutter/data/api/exceptions/remote_exception.dart';
 import 'package:base_flutter/data/api/mapper/base/base_error_response_mapper.dart';
-import 'package:dio/dio.dart';
 
 class DioExceptionMapper extends ExceptionMapper<RemoteException> {
   DioExceptionMapper(this._errorResponseMapper);

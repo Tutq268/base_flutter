@@ -1,8 +1,11 @@
+// Package imports:
+import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/middleware/base_interceptor.dart';
 import 'package:base_flutter/data/constant/server/server_request_response_constants.dart';
 import 'package:base_flutter/data/preference/app_preferences.dart';
-import 'package:dio/dio.dart';
-import 'package:injectable/injectable.dart';
 
 @Injectable()
 class AccessTokenInterceptor extends BaseInterceptor {

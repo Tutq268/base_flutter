@@ -1,9 +1,12 @@
+// Package imports:
+import 'package:dio/dio.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/client/base/api_client_default_settings.dart';
 import 'package:base_flutter/data/api/exception_mapper/dio_exception_mapper.dart';
 import 'package:base_flutter/data/api/mapper/base/base_error_response_mapper.dart';
 import 'package:base_flutter/data/api/mapper/base/base_success_response_mapper.dart';
 import 'package:base_flutter/data/model/typedef.dart';
-import 'package:dio/dio.dart';
 
 enum RestMethod { get, post, put, patch, delete }
 

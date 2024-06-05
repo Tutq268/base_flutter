@@ -1,7 +1,10 @@
-import 'package:base_flutter/data/enum/duration_constants.dart';
-import 'package:base_flutter/foundation/utils/object_utils.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+// Project imports:
+import 'package:base_flutter/data/enum/duration_constants.dart';
+import 'package:base_flutter/foundation/utils/object_utils.dart';
 
 class ViewUtils {
   const ViewUtils._();

@@ -1,9 +1,12 @@
+// Package imports:
+import 'package:injectable/injectable.dart';
+
+// Project imports:
 import 'package:base_flutter/data/api/client/base/rest_api_client.dart';
 import 'package:base_flutter/data/api/client/refresh_token_api_client.dart';
 import 'package:base_flutter/data/api/exceptions/remote_exception.dart';
 import 'package:base_flutter/data/api/model/api_refresh_token_data.dart';
 import 'package:base_flutter/data/api/model/base/data_response.dart';
-import 'package:injectable/injectable.dart';
 
 @LazySingleton()
 class RefreshTokenApiService {
