@@ -20,7 +20,9 @@ mixin _$PopupButton {
   dynamic Function()? get onPressed => throw _privateConstructorUsedError;
   bool get isDefault => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PopupButton
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PopupButtonCopyWith<PopupButton> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -44,6 +46,8 @@ class _$PopupButtonCopyWithImpl<$Res, $Val extends PopupButton>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PopupButton
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -87,6 +91,8 @@ class __$$PopupButtonImplCopyWithImpl<$Res>
       _$PopupButtonImpl _value, $Res Function(_$PopupButtonImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PopupButton
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -145,7 +151,9 @@ class _$PopupButtonImpl extends _PopupButton {
   @override
   int get hashCode => Object.hash(runtimeType, text, onPressed, isDefault);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PopupButton
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PopupButtonImplCopyWith<_$PopupButtonImpl> get copyWith =>
@@ -165,8 +173,11 @@ abstract class _PopupButton extends PopupButton {
   dynamic Function()? get onPressed;
   @override
   bool get isDefault;
+
+  /// Create a copy of PopupButton
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PopupButtonImplCopyWith<_$PopupButtonImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

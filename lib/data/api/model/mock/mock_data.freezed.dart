@@ -25,8 +25,12 @@ mixin _$MockData {
   @JsonKey(name: 'email')
   String? get email => throw _privateConstructorUsedError;
 
+  /// Serializes this MockData to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MockData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MockDataCopyWith<MockData> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -50,6 +54,8 @@ class _$MockDataCopyWithImpl<$Res, $Val extends MockData>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MockData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -89,6 +95,8 @@ class __$$MockDataImplCopyWithImpl<$Res>
       _$MockDataImpl _value, $Res Function(_$MockDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MockData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -139,11 +147,13 @@ class _$MockDataImpl extends _MockData {
             (identical(other.email, email) || other.email == email));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, id, email);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MockData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MockDataImplCopyWith<_$MockDataImpl> get copyWith =>
@@ -172,8 +182,11 @@ abstract class _MockData extends MockData {
   @override
   @JsonKey(name: 'email')
   String? get email;
+
+  /// Create a copy of MockData
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MockDataImplCopyWith<_$MockDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -187,8 +200,12 @@ mixin _$MockData2 {
   @JsonKey(name: 'mock_data')
   MockData? get mockData => throw _privateConstructorUsedError;
 
+  /// Serializes this MockData2 to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of MockData2
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MockData2CopyWith<MockData2> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -213,6 +230,8 @@ class _$MockData2CopyWithImpl<$Res, $Val extends MockData2>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MockData2
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -226,6 +245,8 @@ class _$MockData2CopyWithImpl<$Res, $Val extends MockData2>
     ) as $Val);
   }
 
+  /// Create a copy of MockData2
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MockDataCopyWith<$Res>? get mockData {
@@ -261,6 +282,8 @@ class __$$MockData2ImplCopyWithImpl<$Res>
       _$MockData2Impl _value, $Res Function(_$MockData2Impl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MockData2
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -302,11 +325,13 @@ class _$MockData2Impl extends _MockData2 {
                 other.mockData == mockData));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, mockData);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MockData2
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MockData2ImplCopyWith<_$MockData2Impl> get copyWith =>
@@ -331,8 +356,11 @@ abstract class _MockData2 extends MockData2 {
   @override
   @JsonKey(name: 'mock_data')
   MockData? get mockData;
+
+  /// Create a copy of MockData2
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MockData2ImplCopyWith<_$MockData2Impl> get copyWith =>
       throw _privateConstructorUsedError;
 }

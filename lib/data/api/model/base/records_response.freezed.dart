@@ -34,9 +34,13 @@ mixin _$RecordsListResponse<T> {
   @JsonKey(name: 'prev')
   int? get prev => throw _privateConstructorUsedError;
 
+  /// Serializes this RecordsListResponse to a JSON map.
   Map<String, dynamic> toJson(Object? Function(T) toJsonT) =>
       throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of RecordsListResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $RecordsListResponseCopyWith<T, RecordsListResponse<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -67,6 +71,8 @@ class _$RecordsListResponseCopyWithImpl<T, $Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of RecordsListResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -132,6 +138,8 @@ class __$$RecordsListResponseImplCopyWithImpl<T, $Res>
       $Res Function(_$RecordsListResponseImpl<T>) _then)
       : super(_value, _then);
 
+  /// Create a copy of RecordsListResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -232,7 +240,7 @@ class _$RecordsListResponseImpl<T> implements _RecordsListResponse<T> {
             (identical(other.prev, prev) || other.prev == prev));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -243,7 +251,9 @@ class _$RecordsListResponseImpl<T> implements _RecordsListResponse<T> {
       next,
       prev);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of RecordsListResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$RecordsListResponseImplCopyWith<T, _$RecordsListResponseImpl<T>>
@@ -287,8 +297,11 @@ abstract class _RecordsListResponse<T> implements RecordsListResponse<T> {
   @override
   @JsonKey(name: 'prev')
   int? get prev;
+
+  /// Create a copy of RecordsListResponse
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$RecordsListResponseImplCopyWith<T, _$RecordsListResponseImpl<T>>
       get copyWith => throw _privateConstructorUsedError;
 }

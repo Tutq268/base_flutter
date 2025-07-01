@@ -20,7 +20,9 @@ mixin _$CommonState {
   AppExceptionWrapper? get appExceptionWrapper =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CommonState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $CommonStateCopyWith<CommonState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -44,6 +46,8 @@ class _$CommonStateCopyWithImpl<$Res, $Val extends CommonState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of CommonState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -82,6 +86,8 @@ class __$$CommonStateImplCopyWithImpl<$Res>
       _$CommonStateImpl _value, $Res Function(_$CommonStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of CommonState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -131,7 +137,9 @@ class _$CommonStateImpl implements _CommonState {
   @override
   int get hashCode => Object.hash(runtimeType, isLoading, appExceptionWrapper);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of CommonState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$CommonStateImplCopyWith<_$CommonStateImpl> get copyWith =>
@@ -147,8 +155,11 @@ abstract class _CommonState implements CommonState {
   bool get isLoading;
   @override
   AppExceptionWrapper? get appExceptionWrapper;
+
+  /// Create a copy of CommonState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CommonStateImplCopyWith<_$CommonStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -71,7 +71,7 @@ Map<String, dynamic> _$$MetaImplToJson(_$MetaImpl instance) =>
 
 _$PageInfoImpl _$$PageInfoImplFromJson(Map<String, dynamic> json) =>
     _$PageInfoImpl(
-      next: json['next'] as int?,
+      next: (json['next'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$$PageInfoImplToJson(_$PageInfoImpl instance) =>

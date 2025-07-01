@@ -8,166 +8,169 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:base_flutter/data/api/app_api_service.dart' as _i39;
+import 'package:base_flutter/data/api/app_api_service.dart' as _i643;
 import 'package:base_flutter/data/api/client/auth_app_server_api_client.dart'
-    as _i38;
+    as _i210;
 import 'package:base_flutter/data/api/client/none_auth_app_server_api_client.dart'
-    as _i22;
+    as _i485;
 import 'package:base_flutter/data/api/client/random_user_api_client.dart'
-    as _i24;
-import 'package:base_flutter/data/api/client/raw_api_client.dart' as _i25;
+    as _i182;
+import 'package:base_flutter/data/api/client/raw_api_client.dart' as _i196;
 import 'package:base_flutter/data/api/client/refresh_token_api_client.dart'
-    as _i35;
+    as _i944;
 import 'package:base_flutter/data/api/mapper/base/base_error_response_mapper/firebase_storage_error_response_mapper.dart'
-    as _i11;
+    as _i788;
 import 'package:base_flutter/data/api/mapper/base/base_error_response_mapper/goong_error_response_mapper.dart'
-    as _i12;
+    as _i955;
 import 'package:base_flutter/data/api/mapper/base/base_error_response_mapper/json_array_error_response_mapper.dart'
-    as _i16;
+    as _i574;
 import 'package:base_flutter/data/api/mapper/base/base_error_response_mapper/json_object_error_response_mapper.dart'
-    as _i17;
+    as _i605;
 import 'package:base_flutter/data/api/mapper/base/base_error_response_mapper/line_error_response_mapper.dart'
-    as _i19;
+    as _i564;
 import 'package:base_flutter/data/api/middleware/access_token_interceptor.dart'
-    as _i33;
+    as _i820;
 import 'package:base_flutter/data/api/middleware/connectivity_interceptor.dart'
-    as _i10;
+    as _i723;
 import 'package:base_flutter/data/api/middleware/header_interceptor.dart'
-    as _i13;
+    as _i113;
 import 'package:base_flutter/data/api/middleware/refresh_token_interceptor.dart'
-    as _i37;
-import 'package:base_flutter/data/api/refresh_token_api_service.dart' as _i36;
-import 'package:base_flutter/data/preference/app_preferences.dart' as _i31;
+    as _i459;
+import 'package:base_flutter/data/api/refresh_token_api_service.dart' as _i787;
+import 'package:base_flutter/data/preference/app_preferences.dart' as _i1014;
 import 'package:base_flutter/data/preference/language_code_data_mapper.dart'
-    as _i18;
-import 'package:base_flutter/foundation/helper/app_info/app_info.dart' as _i3;
-import 'package:base_flutter/ui/app_cubit.dart' as _i34;
-import 'package:base_flutter/ui/cubit/common/common_cubit.dart' as _i9;
-import 'package:base_flutter/ui/di/di.dart' as _i42;
-import 'package:base_flutter/ui/navigation/app_navigator.dart' as _i29;
+    as _i756;
+import 'package:base_flutter/foundation/helper/app_info/app_info.dart' as _i972;
+import 'package:base_flutter/ui/app_cubit.dart' as _i386;
+import 'package:base_flutter/ui/cubit/common/common_cubit.dart' as _i101;
+import 'package:base_flutter/ui/di/di.dart' as _i702;
+import 'package:base_flutter/ui/navigation/app_navigator.dart' as _i270;
 import 'package:base_flutter/ui/navigation/base/base_popup_info_mapper.dart'
-    as _i5;
+    as _i320;
 import 'package:base_flutter/ui/navigation/base/base_route_info_mapper.dart'
-    as _i7;
+    as _i446;
 import 'package:base_flutter/ui/navigation/mapper/app_popup_info_mapper.dart'
-    as _i6;
+    as _i724;
 import 'package:base_flutter/ui/navigation/mapper/app_route_info_mapper.dart'
-    as _i8;
-import 'package:base_flutter/ui/router/app_navigator_impl.dart' as _i30;
-import 'package:base_flutter/ui/router/router.dart' as _i4;
-import 'package:base_flutter/ui/screen/home/cubit/home_cubit.dart' as _i14;
-import 'package:base_flutter/ui/screen/login/cubit/login_cubit.dart' as _i40;
-import 'package:base_flutter/ui/screen/main/cubit/main_cubit.dart' as _i20;
+    as _i528;
+import 'package:base_flutter/ui/router/app_navigator_impl.dart' as _i283;
+import 'package:base_flutter/ui/router/router.dart' as _i407;
+import 'package:base_flutter/ui/screen/home/cubit/home_cubit.dart' as _i858;
+import 'package:base_flutter/ui/screen/login/cubit/login_cubit.dart' as _i164;
+import 'package:base_flutter/ui/screen/main/cubit/main_cubit.dart' as _i758;
 import 'package:base_flutter/ui/screen/my_package/cubit/my_package_cubit.dart'
-    as _i21;
-import 'package:base_flutter/ui/screen/points/cubit/points_cubit.dart' as _i23;
+    as _i15;
+import 'package:base_flutter/ui/screen/points/cubit/points_cubit.dart' as _i82;
 import 'package:base_flutter/ui/screen/service/cubit/service_cubit.dart'
-    as _i26;
-import 'package:base_flutter/ui/screen/splash/cubit/splash_cubit.dart' as _i32;
+    as _i651;
+import 'package:base_flutter/ui/screen/splash/cubit/splash_cubit.dart' as _i765;
 import 'package:base_flutter/ui/screen/support/cubit/support_cubit.dart'
-    as _i28;
+    as _i761;
 import 'package:base_flutter/ui/screen/verify_otp/cubit/verify_otp_cubit.dart'
-    as _i41;
-import 'package:base_flutter/ui/share/toast/toast.dart' as _i15;
-import 'package:get_it/get_it.dart' as _i1;
-import 'package:injectable/injectable.dart' as _i2;
-import 'package:shared_preferences/shared_preferences.dart' as _i27;
+    as _i525;
+import 'package:base_flutter/ui/share/toast/toast.dart' as _i72;
+import 'package:get_it/get_it.dart' as _i174;
+import 'package:injectable/injectable.dart' as _i526;
+import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
-extension GetItInjectableX on _i1.GetIt {
+extension GetItInjectableX on _i174.GetIt {
 // initializes the registration of main-scope dependencies inside of GetIt
-  Future<_i1.GetIt> init({
+  Future<_i174.GetIt> init({
     String? environment,
-    _i2.EnvironmentFilter? environmentFilter,
+    _i526.EnvironmentFilter? environmentFilter,
   }) async {
-    final gh = _i2.GetItHelper(
+    final gh = _i526.GetItHelper(
       this,
       environment,
       environmentFilter,
     );
     final serviceModule = _$ServiceModule();
-    gh.lazySingleton<_i3.AppInfo>(() => _i3.AppInfo());
-    gh.lazySingleton<_i4.AppRouter>(() => _i4.AppRouter());
-    gh.lazySingleton<_i5.BasePopupInfoMapper>(() => _i6.AppPopupInfoMapper());
-    gh.lazySingleton<_i7.BaseRouteInfoMapper>(() => _i8.AppRouteInfoMapper());
-    gh.factory<_i9.CommonCubit>(() => _i9.CommonCubit());
-    gh.factory<_i10.ConnectivityInterceptor>(
-        () => _i10.ConnectivityInterceptor());
-    gh.factory<_i11.FirebaseStorageErrorResponseMapper>(
-        () => _i11.FirebaseStorageErrorResponseMapper());
-    gh.factory<_i12.GoongErrorResponseMapper>(
-        () => _i12.GoongErrorResponseMapper());
-    gh.factory<_i13.HeaderInterceptor>(
-        () => _i13.HeaderInterceptor(gh<_i3.AppInfo>()));
-    gh.factory<_i14.HomeCubit>(() => _i14.HomeCubit());
-    gh.lazySingleton<_i15.IToast>(() => _i15.CustomBotToast());
-    gh.factory<_i16.JsonArrayErrorResponseMapper>(
-        () => _i16.JsonArrayErrorResponseMapper());
-    gh.factory<_i17.JsonObjectErrorResponseMapper>(
-        () => _i17.JsonObjectErrorResponseMapper());
-    gh.factory<_i18.LanguageCodeDataMapper>(
-        () => _i18.LanguageCodeDataMapper());
-    gh.factory<_i19.LineErrorResponseMapper>(
-        () => _i19.LineErrorResponseMapper());
-    gh.factory<_i20.MainCubit>(() => _i20.MainCubit());
-    gh.factory<_i21.MyPackageCubit>(() => _i21.MyPackageCubit());
-    gh.lazySingleton<_i22.NoneAuthAppServerApiClient>(
-        () => _i22.NoneAuthAppServerApiClient(gh<_i13.HeaderInterceptor>()));
-    gh.factory<_i23.PointsCubit>(() => _i23.PointsCubit());
-    gh.lazySingleton<_i24.RandomUserApiClient>(
-        () => _i24.RandomUserApiClient());
-    gh.lazySingleton<_i25.RawApiClient>(() => _i25.RawApiClient());
-    gh.factory<_i26.ServiceCubit>(() => _i26.ServiceCubit());
-    await gh.factoryAsync<_i27.SharedPreferences>(
+    gh.factory<_i101.CommonCubit>(() => _i101.CommonCubit());
+    await gh.factoryAsync<_i460.SharedPreferences>(
       () => serviceModule.prefs,
       preResolve: true,
     );
-    gh.factory<_i28.SupportCubit>(() => _i28.SupportCubit());
-    gh.lazySingleton<_i29.AppNavigator>(() => _i30.AppNavigatorImpl(
-          gh<_i4.AppRouter>(),
-          gh<_i5.BasePopupInfoMapper>(),
-          gh<_i7.BaseRouteInfoMapper>(),
+    gh.factory<_i858.HomeCubit>(() => _i858.HomeCubit());
+    gh.factory<_i761.SupportCubit>(() => _i761.SupportCubit());
+    gh.factory<_i82.PointsCubit>(() => _i82.PointsCubit());
+    gh.factory<_i15.MyPackageCubit>(() => _i15.MyPackageCubit());
+    gh.factory<_i651.ServiceCubit>(() => _i651.ServiceCubit());
+    gh.factory<_i758.MainCubit>(() => _i758.MainCubit());
+    gh.factory<_i756.LanguageCodeDataMapper>(
+        () => _i756.LanguageCodeDataMapper());
+    gh.factory<_i723.ConnectivityInterceptor>(
+        () => _i723.ConnectivityInterceptor());
+    gh.factory<_i564.LineErrorResponseMapper>(
+        () => _i564.LineErrorResponseMapper());
+    gh.factory<_i574.JsonArrayErrorResponseMapper>(
+        () => _i574.JsonArrayErrorResponseMapper());
+    gh.factory<_i605.JsonObjectErrorResponseMapper>(
+        () => _i605.JsonObjectErrorResponseMapper());
+    gh.factory<_i955.GoongErrorResponseMapper>(
+        () => _i955.GoongErrorResponseMapper());
+    gh.factory<_i788.FirebaseStorageErrorResponseMapper>(
+        () => _i788.FirebaseStorageErrorResponseMapper());
+    gh.lazySingleton<_i407.AppRouter>(() => _i407.AppRouter());
+    gh.lazySingleton<_i972.AppInfo>(() => _i972.AppInfo());
+    gh.lazySingleton<_i196.RawApiClient>(() => _i196.RawApiClient());
+    gh.lazySingleton<_i182.RandomUserApiClient>(
+        () => _i182.RandomUserApiClient());
+    gh.lazySingleton<_i72.IToast>(() => _i72.CustomBotToast());
+    gh.lazySingleton<_i320.BasePopupInfoMapper>(
+        () => _i724.AppPopupInfoMapper());
+    gh.lazySingleton<_i1014.AppPreferences>(
+        () => _i1014.AppPreferences(gh<_i460.SharedPreferences>()));
+    gh.lazySingleton<_i446.BaseRouteInfoMapper>(
+        () => _i528.AppRouteInfoMapper());
+    gh.factory<_i820.AccessTokenInterceptor>(
+        () => _i820.AccessTokenInterceptor(gh<_i1014.AppPreferences>()));
+    gh.factory<_i765.SplashCubit>(
+        () => _i765.SplashCubit(appPreference: gh<_i1014.AppPreferences>()));
+    gh.factory<_i113.HeaderInterceptor>(
+        () => _i113.HeaderInterceptor(gh<_i972.AppInfo>()));
+    gh.lazySingleton<_i270.AppNavigator>(() => _i283.AppNavigatorImpl(
+          gh<_i407.AppRouter>(),
+          gh<_i320.BasePopupInfoMapper>(),
+          gh<_i446.BaseRouteInfoMapper>(),
         ));
-    gh.lazySingleton<_i31.AppPreferences>(
-        () => _i31.AppPreferences(gh<_i27.SharedPreferences>()));
-    gh.factory<_i32.SplashCubit>(
-        () => _i32.SplashCubit(appPreference: gh<_i31.AppPreferences>()));
-    gh.factory<_i33.AccessTokenInterceptor>(
-        () => _i33.AccessTokenInterceptor(gh<_i31.AppPreferences>()));
-    gh.lazySingleton<_i34.AppCubit>(() => _i34.AppCubit(
-          appPreference: gh<_i31.AppPreferences>(),
-          languageCodeDataMapper: gh<_i18.LanguageCodeDataMapper>(),
+    gh.lazySingleton<_i386.AppCubit>(() => _i386.AppCubit(
+          appPreference: gh<_i1014.AppPreferences>(),
+          languageCodeDataMapper: gh<_i756.LanguageCodeDataMapper>(),
         ));
-    gh.lazySingleton<_i35.RefreshTokenApiClient>(
-        () => _i35.RefreshTokenApiClient(
-              gh<_i13.HeaderInterceptor>(),
-              gh<_i33.AccessTokenInterceptor>(),
+    gh.lazySingleton<_i944.RefreshTokenApiClient>(
+        () => _i944.RefreshTokenApiClient(
+              gh<_i113.HeaderInterceptor>(),
+              gh<_i820.AccessTokenInterceptor>(),
             ));
-    gh.lazySingleton<_i36.RefreshTokenApiService>(
-        () => _i36.RefreshTokenApiService(gh<_i35.RefreshTokenApiClient>()));
-    gh.factory<_i37.RefreshTokenInterceptor>(() => _i37.RefreshTokenInterceptor(
-          gh<_i31.AppPreferences>(),
-          gh<_i36.RefreshTokenApiService>(),
-          gh<_i22.NoneAuthAppServerApiClient>(),
-        ));
-    gh.lazySingleton<_i38.AuthAppServerApiClient>(
-        () => _i38.AuthAppServerApiClient(
-              gh<_i13.HeaderInterceptor>(),
-              gh<_i33.AccessTokenInterceptor>(),
-              gh<_i37.RefreshTokenInterceptor>(),
+    gh.lazySingleton<_i787.RefreshTokenApiService>(
+        () => _i787.RefreshTokenApiService(gh<_i944.RefreshTokenApiClient>()));
+    gh.lazySingleton<_i485.NoneAuthAppServerApiClient>(
+        () => _i485.NoneAuthAppServerApiClient(gh<_i113.HeaderInterceptor>()));
+    gh.factory<_i459.RefreshTokenInterceptor>(
+        () => _i459.RefreshTokenInterceptor(
+              gh<_i1014.AppPreferences>(),
+              gh<_i787.RefreshTokenApiService>(),
+              gh<_i485.NoneAuthAppServerApiClient>(),
             ));
-    gh.lazySingleton<_i39.AppApiService>(() => _i39.AppApiService(
-          gh<_i22.NoneAuthAppServerApiClient>(),
-          gh<_i38.AuthAppServerApiClient>(),
-          gh<_i24.RandomUserApiClient>(),
+    gh.lazySingleton<_i210.AuthAppServerApiClient>(
+        () => _i210.AuthAppServerApiClient(
+              gh<_i113.HeaderInterceptor>(),
+              gh<_i820.AccessTokenInterceptor>(),
+              gh<_i459.RefreshTokenInterceptor>(),
+            ));
+    gh.lazySingleton<_i643.AppApiService>(() => _i643.AppApiService(
+          gh<_i485.NoneAuthAppServerApiClient>(),
+          gh<_i210.AuthAppServerApiClient>(),
+          gh<_i182.RandomUserApiClient>(),
         ));
-    gh.factory<_i40.LoginCubit>(
-        () => _i40.LoginCubit(apiServices: gh<_i39.AppApiService>()));
-    gh.factory<_i41.VerifyOtpCubit>(() => _i41.VerifyOtpCubit(
-          apiServices: gh<_i39.AppApiService>(),
-          appPrefrence: gh<_i31.AppPreferences>(),
+    gh.factory<_i525.VerifyOtpCubit>(() => _i525.VerifyOtpCubit(
+          apiServices: gh<_i643.AppApiService>(),
+          appPrefrence: gh<_i1014.AppPreferences>(),
         ));
+    gh.factory<_i164.LoginCubit>(
+        () => _i164.LoginCubit(apiServices: gh<_i643.AppApiService>()));
     return this;
   }
 }
 
-class _$ServiceModule extends _i42.ServiceModule {}
+class _$ServiceModule extends _i702.ServiceModule {}

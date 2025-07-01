@@ -91,6 +91,9 @@ class _$AppPopupInfoCopyWithImpl<$Res, $Val extends AppPopupInfo>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of AppPopupInfo
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -110,6 +113,8 @@ class __$$ConfirmDialogImplCopyWithImpl<$Res>
       _$ConfirmDialogImpl _value, $Res Function(_$ConfirmDialogImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppPopupInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -158,7 +163,9 @@ class _$ConfirmDialogImpl implements _ConfirmDialog {
   @override
   int get hashCode => Object.hash(runtimeType, message, onPressed);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppPopupInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ConfirmDialogImplCopyWith<_$ConfirmDialogImpl> get copyWith =>
@@ -253,7 +260,10 @@ abstract class _ConfirmDialog implements AppPopupInfo {
 
   String get message;
   dynamic Function()? get onPressed;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppPopupInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ConfirmDialogImplCopyWith<_$ConfirmDialogImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -275,6 +285,8 @@ class __$$ErrorWithRetryDialogImplCopyWithImpl<$Res>
       $Res Function(_$ErrorWithRetryDialogImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppPopupInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -323,7 +335,9 @@ class _$ErrorWithRetryDialogImpl implements _ErrorWithRetryDialog {
   @override
   int get hashCode => Object.hash(runtimeType, message, onRetryPressed);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppPopupInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ErrorWithRetryDialogImplCopyWith<_$ErrorWithRetryDialogImpl>
@@ -420,7 +434,10 @@ abstract class _ErrorWithRetryDialog implements AppPopupInfo {
 
   String get message;
   dynamic Function()? get onRetryPressed;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppPopupInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ErrorWithRetryDialogImplCopyWith<_$ErrorWithRetryDialogImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
@@ -439,6 +456,9 @@ class __$$RequiredLoginDialogImplCopyWithImpl<$Res>
   __$$RequiredLoginDialogImplCopyWithImpl(_$RequiredLoginDialogImpl _value,
       $Res Function(_$RequiredLoginDialogImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of AppPopupInfo
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -564,6 +584,8 @@ class __$$BlankBottomSheetImplCopyWithImpl<$Res>
       $Res Function(_$BlankBottomSheetImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppPopupInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -603,7 +625,9 @@ class _$BlankBottomSheetImpl implements _BlankBottomSheet {
   @override
   int get hashCode => Object.hash(runtimeType, renderData);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppPopupInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BlankBottomSheetImplCopyWith<_$BlankBottomSheetImpl> get copyWith =>
@@ -697,7 +721,10 @@ abstract class _BlankBottomSheet implements AppPopupInfo {
       _$BlankBottomSheetImpl;
 
   Widget get renderData;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppPopupInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BlankBottomSheetImplCopyWith<_$BlankBottomSheetImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -12,11 +12,11 @@ _$RecordsListResponseImpl<T> _$$RecordsListResponseImplFromJson<T>(
 ) =>
     _$RecordsListResponseImpl<T>(
       records: (json['records'] as List<dynamic>?)?.map(fromJsonT).toList(),
-      page: json['page'] as int?,
-      offset: json['offset'] as int?,
-      total: json['total'] as int?,
-      next: json['next'] as int?,
-      prev: json['prev'] as int?,
+      page: (json['page'] as num?)?.toInt(),
+      offset: (json['offset'] as num?)?.toInt(),
+      total: (json['total'] as num?)?.toInt(),
+      next: (json['next'] as num?)?.toInt(),
+      prev: (json['prev'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$$RecordsListResponseImplToJson<T>(

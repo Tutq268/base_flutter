@@ -84,6 +84,9 @@ class _$AppRouteInfoCopyWithImpl<$Res, $Val extends AppRouteInfo>
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
+
+  /// Create a copy of AppRouteInfo
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -100,6 +103,9 @@ class __$$SplashImplCopyWithImpl<$Res>
   __$$SplashImplCopyWithImpl(
       _$SplashImpl _value, $Res Function(_$SplashImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of AppRouteInfo
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -214,6 +220,9 @@ class __$$LoginImplCopyWithImpl<$Res>
   __$$LoginImplCopyWithImpl(
       _$LoginImpl _value, $Res Function(_$LoginImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of AppRouteInfo
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -327,6 +336,9 @@ class __$$MainImplCopyWithImpl<$Res>
     implements _$$MainImplCopyWith<$Res> {
   __$$MainImplCopyWithImpl(_$MainImpl _value, $Res Function(_$MainImpl) _then)
       : super(_value, _then);
+
+  /// Create a copy of AppRouteInfo
+  /// with the given fields replaced by the non-null parameter values.
 }
 
 /// @nodoc
@@ -444,6 +456,8 @@ class __$$VerifyOtpImplCopyWithImpl<$Res>
       _$VerifyOtpImpl _value, $Res Function(_$VerifyOtpImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of AppRouteInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -491,7 +505,9 @@ class _$VerifyOtpImpl implements _VerifyOtp {
   @override
   int get hashCode => Object.hash(runtimeType, isLogin, phoneNumber);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of AppRouteInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$VerifyOtpImplCopyWith<_$VerifyOtpImpl> get copyWith =>
@@ -578,7 +594,10 @@ abstract class _VerifyOtp implements AppRouteInfo {
 
   bool get isLogin;
   String get phoneNumber;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of AppRouteInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$VerifyOtpImplCopyWith<_$VerifyOtpImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -18,7 +18,9 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$PointsState {
   bool get isLoading => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PointsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PointsStateCopyWith<PointsState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -42,6 +44,8 @@ class _$PointsStateCopyWithImpl<$Res, $Val extends PointsState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PointsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -75,6 +79,8 @@ class __$$PointsStateImplCopyWithImpl<$Res>
       _$PointsStateImpl _value, $Res Function(_$PointsStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PointsState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -115,7 +121,9 @@ class _$PointsStateImpl implements _PointsState {
   @override
   int get hashCode => Object.hash(runtimeType, isLoading);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PointsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PointsStateImplCopyWith<_$PointsStateImpl> get copyWith =>
@@ -127,8 +135,11 @@ abstract class _PointsState implements PointsState {
 
   @override
   bool get isLoading;
+
+  /// Create a copy of PointsState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PointsStateImplCopyWith<_$PointsStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

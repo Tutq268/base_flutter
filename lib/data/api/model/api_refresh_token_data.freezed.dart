@@ -23,8 +23,12 @@ mixin _$ApiRefreshTokenData {
   @JsonKey(name: 'access_token')
   String? get accessToken => throw _privateConstructorUsedError;
 
+  /// Serializes this ApiRefreshTokenData to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ApiRefreshTokenData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ApiRefreshTokenDataCopyWith<ApiRefreshTokenData> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -48,6 +52,8 @@ class _$ApiRefreshTokenDataCopyWithImpl<$Res, $Val extends ApiRefreshTokenData>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ApiRefreshTokenData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -81,6 +87,8 @@ class __$$ApiRefreshTokenDataImplCopyWithImpl<$Res>
       $Res Function(_$ApiRefreshTokenDataImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ApiRefreshTokenData
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -122,11 +130,13 @@ class _$ApiRefreshTokenDataImpl implements _ApiRefreshTokenData {
                 other.accessToken == accessToken));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, accessToken);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ApiRefreshTokenData
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ApiRefreshTokenDataImplCopyWith<_$ApiRefreshTokenDataImpl> get copyWith =>
@@ -152,8 +162,11 @@ abstract class _ApiRefreshTokenData implements ApiRefreshTokenData {
   @override
   @JsonKey(name: 'access_token')
   String? get accessToken;
+
+  /// Create a copy of ApiRefreshTokenData
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ApiRefreshTokenDataImplCopyWith<_$ApiRefreshTokenDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

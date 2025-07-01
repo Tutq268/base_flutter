@@ -8,7 +8,7 @@ part of 'update_data_response.dart';
 
 UpdateDataResponse _$UpdateDataResponseFromJson(Map<String, dynamic> json) =>
     UpdateDataResponse(
-      status: json['status'] as int,
+      status: (json['status'] as num).toInt(),
       message: json['message'] as String,
     );
 

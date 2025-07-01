@@ -18,7 +18,9 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$MyPackageState {
   bool get isLoading => throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MyPackageState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MyPackageStateCopyWith<MyPackageState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -42,6 +44,8 @@ class _$MyPackageStateCopyWithImpl<$Res, $Val extends MyPackageState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of MyPackageState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -75,6 +79,8 @@ class __$$MyPackageStateImplCopyWithImpl<$Res>
       _$MyPackageStateImpl _value, $Res Function(_$MyPackageStateImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of MyPackageState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -115,7 +121,9 @@ class _$MyPackageStateImpl implements _MyPackageState {
   @override
   int get hashCode => Object.hash(runtimeType, isLoading);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of MyPackageState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MyPackageStateImplCopyWith<_$MyPackageStateImpl> get copyWith =>
@@ -128,8 +136,11 @@ abstract class _MyPackageState implements MyPackageState {
 
   @override
   bool get isLoading;
+
+  /// Create a copy of MyPackageState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MyPackageStateImplCopyWith<_$MyPackageStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

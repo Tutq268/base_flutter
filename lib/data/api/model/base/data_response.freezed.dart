@@ -26,9 +26,13 @@ mixin _$DataResponse<T> {
   @JsonKey(name: 'meta')
   Meta? get meta => throw _privateConstructorUsedError;
 
+  /// Serializes this DataResponse to a JSON map.
   Map<String, dynamic> toJson(Object? Function(T) toJsonT) =>
       throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DataResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DataResponseCopyWith<T, DataResponse<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -55,6 +59,8 @@ class _$DataResponseCopyWithImpl<T, $Res, $Val extends DataResponse<T>>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DataResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -73,6 +79,8 @@ class _$DataResponseCopyWithImpl<T, $Res, $Val extends DataResponse<T>>
     ) as $Val);
   }
 
+  /// Create a copy of DataResponse
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MetaCopyWith<$Res>? get meta {
@@ -109,6 +117,8 @@ class __$$DataResponseImplCopyWithImpl<T, $Res>
       _$DataResponseImpl<T> _value, $Res Function(_$DataResponseImpl<T>) _then)
       : super(_value, _then);
 
+  /// Create a copy of DataResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -170,12 +180,14 @@ class _$DataResponseImpl<T>
             (identical(other.meta, meta) || other.meta == meta));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(data), meta);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DataResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DataResponseImplCopyWith<T, _$DataResponseImpl<T>> get copyWith =>
@@ -203,8 +215,11 @@ abstract class _DataResponse<T> implements DataResponse<T> {
   @override
   @JsonKey(name: 'meta')
   Meta? get meta;
+
+  /// Create a copy of DataResponse
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DataResponseImplCopyWith<T, _$DataResponseImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -221,9 +236,13 @@ mixin _$DataListResponse<T> {
   @JsonKey(name: 'meta')
   Meta? get meta => throw _privateConstructorUsedError;
 
+  /// Serializes this DataListResponse to a JSON map.
   Map<String, dynamic> toJson(Object? Function(T) toJsonT) =>
       throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of DataListResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $DataListResponseCopyWith<T, DataListResponse<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -251,6 +270,8 @@ class _$DataListResponseCopyWithImpl<T, $Res, $Val extends DataListResponse<T>>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of DataListResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -269,6 +290,8 @@ class _$DataListResponseCopyWithImpl<T, $Res, $Val extends DataListResponse<T>>
     ) as $Val);
   }
 
+  /// Create a copy of DataListResponse
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $MetaCopyWith<$Res>? get meta {
@@ -306,6 +329,8 @@ class __$$DataListResponseImplCopyWithImpl<T, $Res>
       $Res Function(_$DataListResponseImpl<T>) _then)
       : super(_value, _then);
 
+  /// Create a copy of DataListResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -377,12 +402,14 @@ class _$DataListResponseImpl<T>
             (identical(other.meta, meta) || other.meta == meta));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_data), meta);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of DataListResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$DataListResponseImplCopyWith<T, _$DataListResponseImpl<T>> get copyWith =>
@@ -410,8 +437,11 @@ abstract class _DataListResponse<T> implements DataListResponse<T> {
   @override
   @JsonKey(name: 'meta')
   Meta? get meta;
+
+  /// Create a copy of DataListResponse
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DataListResponseImplCopyWith<T, _$DataListResponseImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -425,8 +455,12 @@ mixin _$Meta {
   @JsonKey(name: 'pagy_info')
   PageInfo? get pageInfo => throw _privateConstructorUsedError;
 
+  /// Serializes this Meta to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Meta
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $MetaCopyWith<Meta> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -450,6 +484,8 @@ class _$MetaCopyWithImpl<$Res, $Val extends Meta>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Meta
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -463,6 +499,8 @@ class _$MetaCopyWithImpl<$Res, $Val extends Meta>
     ) as $Val);
   }
 
+  /// Create a copy of Meta
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $PageInfoCopyWith<$Res>? get pageInfo {
@@ -496,6 +534,8 @@ class __$$MetaImplCopyWithImpl<$Res>
   __$$MetaImplCopyWithImpl(_$MetaImpl _value, $Res Function(_$MetaImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Meta
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -544,11 +584,13 @@ class _$MetaImpl with DiagnosticableTreeMixin implements _Meta {
                 other.pageInfo == pageInfo));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, pageInfo);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Meta
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$MetaImplCopyWith<_$MetaImpl> get copyWith =>
@@ -571,8 +613,11 @@ abstract class _Meta implements Meta {
   @override
   @JsonKey(name: 'pagy_info')
   PageInfo? get pageInfo;
+
+  /// Create a copy of Meta
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MetaImplCopyWith<_$MetaImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -586,8 +631,12 @@ mixin _$PageInfo {
   @JsonKey(name: 'next')
   int? get next => throw _privateConstructorUsedError;
 
+  /// Serializes this PageInfo to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of PageInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PageInfoCopyWith<PageInfo> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -610,6 +659,8 @@ class _$PageInfoCopyWithImpl<$Res, $Val extends PageInfo>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PageInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -643,6 +694,8 @@ class __$$PageInfoImplCopyWithImpl<$Res>
       _$PageInfoImpl _value, $Res Function(_$PageInfoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PageInfo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -690,11 +743,13 @@ class _$PageInfoImpl with DiagnosticableTreeMixin implements _PageInfo {
             (identical(other.next, next) || other.next == next));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, next);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PageInfo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$PageInfoImplCopyWith<_$PageInfoImpl> get copyWith =>
@@ -717,8 +772,11 @@ abstract class _PageInfo implements PageInfo {
   @override
   @JsonKey(name: 'next')
   int? get next;
+
+  /// Create a copy of PageInfo
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$PageInfoImplCopyWith<_$PageInfoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

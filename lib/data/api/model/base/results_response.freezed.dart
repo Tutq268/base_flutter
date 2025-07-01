@@ -24,9 +24,13 @@ mixin _$ResultsListResponse<T> {
   @JsonKey(name: 'results')
   List<T>? get results => throw _privateConstructorUsedError;
 
+  /// Serializes this ResultsListResponse to a JSON map.
   Map<String, dynamic> toJson(Object? Function(T) toJsonT) =>
       throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ResultsListResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ResultsListResponseCopyWith<T, ResultsListResponse<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -51,6 +55,8 @@ class _$ResultsListResponseCopyWithImpl<T, $Res,
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ResultsListResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -85,6 +91,8 @@ class __$$ResultsListResponseImplCopyWithImpl<T, $Res>
       $Res Function(_$ResultsListResponseImpl<T>) _then)
       : super(_value, _then);
 
+  /// Create a copy of ResultsListResponse
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -134,12 +142,14 @@ class _$ResultsListResponseImpl<T> implements _ResultsListResponse<T> {
             const DeepCollectionEquality().equals(other._results, _results));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_results));
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ResultsListResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ResultsListResponseImplCopyWith<T, _$ResultsListResponseImpl<T>>
@@ -164,8 +174,11 @@ abstract class _ResultsListResponse<T> implements ResultsListResponse<T> {
   @override
   @JsonKey(name: 'results')
   List<T>? get results;
+
+  /// Create a copy of ResultsListResponse
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ResultsListResponseImplCopyWith<T, _$ResultsListResponseImpl<T>>
       get copyWith => throw _privateConstructorUsedError;
 }

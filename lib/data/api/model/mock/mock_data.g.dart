@@ -8,7 +8,7 @@ part of 'mock_data.dart';
 
 _$MockDataImpl _$$MockDataImplFromJson(Map<String, dynamic> json) =>
     _$MockDataImpl(
-      id: json['uid'] as int?,
+      id: (json['uid'] as num?)?.toInt(),
       email: json['email'] as String?,
     );
 
